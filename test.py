@@ -45,6 +45,8 @@ if not ws.sock or not ws.sock.connected:
     raise websocket.WebSocketTimeoutException()
 
 
-while True:
+for i in range(1, 90):
     print tt.min_diff
-    sleep(5)
+    sleep(10)
+
+print "done"
